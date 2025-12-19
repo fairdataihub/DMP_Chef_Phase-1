@@ -1,13 +1,9 @@
 # Project Setup Guide
 
-## Create Project Folder and Environment Setup
 
 ```bash
-# Create a new project folder
-mkdir <project_folder_name>
-
-# Move into the project folder
-cd <project_folder_name>
+# Cloning the repository
+git clone https://github.com/fairdataihub/dmpchef.git
 
 # Open the folder in VS Code
 code .
@@ -21,17 +17,6 @@ conda activate <path_of_the_env>
 # Install dependencies from requirements.txt
 pip install -r requirements.txt
 
-# Initialize Git
-git init
+# Run it
+uvicorn app:app --reload
 
-# Stage all files
-git add .
-
-# Commit changes
-git commit -m "<write your commit message>"
-
-# Push to remote (after adding remote origin)
-git push
-
-# Cloning the repository
-git clone https://github.com/fairdataihub/dmpchef.git
